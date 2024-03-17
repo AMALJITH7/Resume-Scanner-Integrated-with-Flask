@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Scanner</title>
+</head>
+<body>
+    <link rel="stylesheet" href="{{url_for ('static',filename='style.css')}}">
+    <form action="http://127.0.0.1:5000/resume" method="POST" enctype="multipart/form-data">
+   
+        <label for="pdf_file">Upload PDF file:</label>
+        <input type="file" name="file" accept=".pdf" required>
+        <br>
+        <textarea  name="sample" rows="3" cols="30" required="required" style="font-size: 18pt" placeholder="Enter the skills that you are looking for" class="box1"></textarea>
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+    
+        
+</body>
+</html>
